@@ -1,5 +1,3 @@
-#![allow(unused_variables)]
-#![allow(unused_assignments)]
 use std::process;
 use text_io::read;
 use blinmaker;
@@ -23,15 +21,9 @@ fn main() {
         process::exit(0x0100);
     }
     let blin_amount: f32 = blinmaker::find_blin_amount(flour_amount, milk_amount, eggs_amount);
-    let eggs_required: i32;
-    let flour_required: f32;
-    let milk_required: f32;
     let materials: (f32, f32, i32) = blinmaker::find_materials_amount(flour_amount,milk_amount,eggs_amount);
-    flour_required = materials.0;
-    milk_required = materials.1;
-    eggs_required = materials.2;
-    println!("You will need {} eggs", eggs_required);
-    println!("You will need {} grams of flour", flour_required);
-    println!("You will need {} mililiters of milk", milk_required);
+    println!("You will need {} eggs", materials.2);
+    println!("You will need {} grams of flour", materials.0);
+    println!("You will need {} mililiters of milk", materials.1);
     println!("You can make {} blins", blin_amount as i32);
 }
