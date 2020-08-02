@@ -4,6 +4,8 @@ version = "1.0.0"
 authors = ["Illia 'dragonhaze' Chub"]
 edition = "2018"
 repository = "https://github.com/ilchub/blinmaker-cli.git"
+description = "Program to calculate, how many pencakes(blins) you can make, using certain amount of materials"
+license = "GPLv3"
 
 [dependencies]
 text_io = "0.1.8"
