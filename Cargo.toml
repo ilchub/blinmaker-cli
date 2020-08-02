@@ -1,8 +1,9 @@
 [package]
 name = "blinmaker-cli"
 version = "1.0.0"
-authors = ["dragonhaze"]
+authors = ["Illia 'dragonhaze' Chub"]
 edition = "2018"
+repository = "https://github.com/ilchub/blinmaker-cli.git"
 
 [dependencies]
 text_io = "0.1.8"
